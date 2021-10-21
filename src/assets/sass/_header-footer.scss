@@ -1,0 +1,79 @@
+.header{
+    height: 100vh;
+    width: 100vw;
+    &__title{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 125px;
+    }
+    &__disc{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+    &__p{
+        margin-left: 8vw;
+    }
+    &__link{
+        margin-right: 8vw;
+    }
+}
+.title__grid{
+    &--two{
+        background-image: url(../images/kid_header.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: right;
+    }
+    &--three{
+        padding-right: 90px;
+        background-image: url(../images/carre_vert.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: right;
+    }
+    &--five{
+        padding-left: 90px;
+        background-image: url(../images/carre_orange.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: left;
+    }
+    &--six{
+        width: 80%;
+        background-image: url(../images/carre_arc_cercle.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-x: right;
+    }
+    &--six::after{
+        content: '';
+        position: absolute;
+        background-color: #c327fa;
+        margin-top: 35px;
+        left: 6%;
+        height: 15px;
+        width: 185px;
+        z-index: -10;
+    }
+}
+@media(min-width : 767px){
+    .title__grid{
+        &--three{
+            padding-right: 160px;
+        }
+        &--five{
+            padding-left: 160px;
+        }
+        &--six::after{
+            margin-top: 75px;
+            width: 400px;
+            height: 30px;
+        }
+    }
+}

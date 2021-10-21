@@ -1,8 +1,31 @@
 /* Type
 ================================================================================ */
+@use "_var.scss" as v;
 
 html {
     font-size: 62.5%;
+    font-family: v.$font-main;
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+.title{
+    font-size: 11vw;
+    line-height: 1.5;
+    margin: 0;
+}
+.title--kids{
+    font-family: v.$font-second;
+    font-weight: 400;
+}
+.p{
+   font-size: 18px;
+   line-height: 25px; 
+}
+.color{
+    color: #ff9900;
+}
+@media(min-width : 1000px){
+    .title{
+        font-size: 120px;
+    }
 }
