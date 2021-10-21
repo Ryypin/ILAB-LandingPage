@@ -1,0 +1,34 @@
+/* Variables 
+================================================================================ */
+
+:root {
+    --color-bg: #fff;
+    --color-text: #262626;
+    --color-primary: #C327FA;
+    --color-secondary: #FFC700;
+    --color-ter: #4D82F6;
+}
+
+@font-face {
+    font-family: "Telegraf";
+    src: url(../fonts/Telegraf-Regular.woff) format("woff"),
+        url(../fonts/Telegraf-Regular.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Telegraf";
+    src: url(../fonts/Telegraf-Bold.woff) format("woff"),
+        url(../fonts/Telegraf-Bold.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kids-Magic";
+    src: url(../fonts/Kids\ Magic.woff) format("woff"),
+        url(../fonts/Kids\ Magic.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}

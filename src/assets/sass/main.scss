@@ -1,0 +1,43 @@
+/*!
+***
+iLab
+***
+Projet scolaire - option DWT 
+*
+@version: 1.0
+
+@author: 
+* Angie Courtoy <angie-courtoy.be>
+* Aude Schaff <audeschaff.be/>
+* Caroline Daoud <carolinedaoud.be>
+* Chrysanthe Gomrée <chrysanthe.dev>
+* Maxime Van Olffen <maximevo.be>
+* Steven Harris <https://steven-harris.be/>
+*
+***
+================================================================================ */
+
+
+@use "_normalize.css";
+@use "_header-footer.scss";
+@use "_icons.scss";
+@use "_images.scss";
+@use "_layout.scss";
+@use "_type.scss";
+@use "_animations.scss";
+@use "_var.scss";
+@use "_ex.scss";
+
+
+/* TO DO 
+================================================================================ 
+
+- Favicon OK
+- Faire en sorte que le texte du bouton disparaisse sur la page exp. quand on reclique dessus OK
+- Gérer le lien des planètes de view-all pour qu'on arr sur la slide corresp dans l'exp.
+- Metadata header comme il faut.
+- Code beautifier css/js/html
+- Valider code w3c
+- Verifier toutes les classes (bonne nomenclature)
+- css -> scss OK
+*/
