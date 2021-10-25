@@ -3,6 +3,17 @@
 
 $font-main: "Telegraf";
 $font-second: "Kids-Magic";
+$rapport: 1.5;
+$fontSizeGlob: 18px;
+$fontSizeGlobDesktop: 23px;
+$lineHeight: 25px;
+$lineHeightDesktop: 34px;
+$titleMobile: $fontSizeGlob*$rapport*$rapport;
+$titleTablet: $fontSizeGlob*$rapport*$rapport*$rapport;
+$titleDesktop: $fontSizeGlob*$rapport*$rapport*$rapport*$rapport;
+$titleMedMobile: $fontSizeGlob*$rapport;
+$titleMedTablet: $fontSizeGlob*$rapport*$rapport;
+$titleMedDesktop: $fontSizeGlob*$rapport*$rapport*$rapport;
 
 :root {
     --color-bg: #fff;

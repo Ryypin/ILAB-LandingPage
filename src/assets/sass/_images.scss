@@ -1,0 +1,14 @@
+.img--foot{
+    height: 126px;
+    width: auto;
+    margin-left: 10vw;
+    margin-top: 8vw;
+    margin-bottom: 25px;
+}
+@media(min-width : 768px){
+    .img--foot{
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2vw;
+    }
+}

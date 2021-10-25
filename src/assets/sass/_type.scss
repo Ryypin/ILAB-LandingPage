@@ -3,29 +3,63 @@
 @use "_var.scss" as v;
 
 html {
-    font-size: 62.5%;
+    font-size: v.$fontSizeGlob;
     font-family: v.$font-main;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
 .title{
-    font-size: 11vw;
     line-height: 1.5;
     margin: 0;
 }
-.title--kids{
+.title--big{
+    font-size: v.$titleMobile;
+}
+.title--regular{
+    font-size: v.$titleMedMobile;
+}
+.title--small{
+    font-size: v.$titleMedMobile;
+}
+.font-var{
     font-family: v.$font-second;
     font-weight: 400;
 }
-.p{
-   font-size: 18px;
-   line-height: 25px; 
+p{
+   line-height: v.$lineHeight; 
 }
 .color{
     color: #ff9900;
 }
-@media(min-width : 1000px){
-    .title{
-        font-size: 120px;
+.mix__block{
+    color: white;
+}
+.mix__span{
+    font-size: v.$titleMedMobile;
+}
+.list__el--bold{
+    font-weight: 600;   
+}
+@media(min-width : 768px){
+    .title--big{
+        font-size: v.$titleTablet;
+    }
+    .title--regular{
+        font-size: v.$titleMedTablet;
+    }
+    p{
+        font-size: v.$fontSizeGlobDesktop;
+        line-height: v.$lineHeightDesktop; 
+    }
+    .mix--p{
+        font-size: v.$fontSizeGlob;
+    }
+}
+@media(min-width : 1440px){
+    .title--big{
+        font-size: v.$titleDesktop;
+    }
+    .title--regular{
+        font-size: v.$titleMedDesktop;
     }
 }

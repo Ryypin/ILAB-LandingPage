@@ -7,4 +7,15 @@
     border: black 2px solid;
     border-radius: 50%;
     transform: rotate(-20deg);
+    width: fit-content;
+    height: fit-content;
+}
+.demo__link{
+    margin: 0;
+    justify-self: right;
+}
+@media(min-width : 768px){
+    .demo__link{
+        margin-right: 50px;
+    }
 }
