@@ -96,10 +96,12 @@
             background-image: url(../images/carre_orange.svg);
             background-repeat: no-repeat;
             background-size: contain;
-            padding-left: 15%;
+            padding-left: 18%;
         }
         &--two{
             background-position-x: 160%;
+            text-align: center;
+            margin: 0 2% 0 9%;
         }
         &--three{
             background-position-x: 85%;
@@ -135,14 +137,14 @@
     .title__grid{
         &--one{
             padding-left: 30%;
-            background-position-x: 25%;
+            background-position-x: 22%;
         }
         &--two{
-            background-position-x: 55%;
-            margin-left: 20%;
+            background-position-x: 60%;
+            margin-left: 15%;
         }
         &--three{
-            background-position-x: 72%;
+            background-position-x: 75%;
         }
         &--seven{
             text-align: center;
@@ -154,20 +156,32 @@
     .header{
         padding: 0;
         &__title{
-            top: 10%;
+            top: 6%;
         }
+    }
+    .title__three--var{
+        text-align: right;
+        margin-left: 34%;
     }
     .title__grid{
         &--one{
-            background-position-x: 16%;
+            padding: 0;
+            background-position-x: 89%;
+            padding-right: 11%;
+            margin-right: 21%;
         }
         &--two{
-            background-position-x: 388%;
+            margin: 0;
+            background: none;
+            margin-left: 46%;
         }
         &--three{
+            width: 100%;
+            background-image: url(../images/carre_vert.svg), url(../images/kid_header.png);
+            background-position-x: 0%;
+            background-position: right, left;
             padding: 0;
-            text-align: left;
-            background-position-x: 83%;
+            text-align: center;
         }
         &--four{
             background-image: url(../images/carre_jaune.svg);
@@ -176,7 +190,7 @@
             background-position-x: 7%;
         }
         &--seven{
-            background-position-x: 90%;
+            background-position-x: 80%;
         }
     }
     .list{
