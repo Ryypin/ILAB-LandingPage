@@ -15,6 +15,10 @@ html {
 .title--big{
     font-size: v.$titleMobile;
 }
+.title--r{
+    top: 0;
+    font-size: v.$titleMobile;
+}
 .title--regular{
     font-size: v.$titleMedMobile;
 }
@@ -45,12 +49,17 @@ p{
 .list__el--bold{
     font-weight: 600;   
 }
+.header__span{
+    letter-spacing: 1.25px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
 @media(min-width : 768px){
     .font-var{
         -webkit-text-stroke: 3px black;
     }
     .mix__span{
-        -webkit-text-stroke: 1px black;
+        -webkit-text-stroke: 1px;
     }
     .title--big{
         font-size: v.$titleTablet;
@@ -72,5 +81,8 @@ p{
     }
     .title--regular{
         font-size: v.$titleMedDesktop;
+    }
+    .mix--p{
+        font-size: v.$fontSizeGlobDesktop;
     }
 }

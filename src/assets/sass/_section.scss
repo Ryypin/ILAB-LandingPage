@@ -1,4 +1,10 @@
 @use "_var.scss" as v;
+
+@media (-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+
+    .box{background:url('images/box-bg@2x.png') no-repeat top left;}
+}
 .section{
     &--about{
         width: 100%;
@@ -9,11 +15,21 @@
     }
     &--demo{
         overflow: hidden;
-        padding-bottom: 150px;
+        background-image: url(../images/demo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: -22%;
+    }
+    &--mix{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
     }
 }
 .about{
-    transform: translate(-100%);
+    opacity: 0;
+    transform: translate(0, 100px);
     background-color: white;
     width: 90%;
     &--title{
@@ -24,39 +40,58 @@
         margin: 25px 8vw 0 8vw;
     }
 }
-.section--mix{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .mix__block{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 300px;
+    background-color: #ff303b;
+    transform: scale(1);
     &--one{
         background-color: #c327fa;
+        transition: 1s;
+    }
+    &--one:hover{
+        background-color: #ff303b;
     }
     &--two{
-        background-color: #ff5c00;
+        background-color: #FFC700;
+        transition: 1s;
+    }
+    &--two:hover{
+        background-color: #5319b6;
     }
     &--three{
-       background-color: #44d2c1; 
+        background-color: #4d82f6; 
+        transition: 1s;
+    }
+    &--three:hover{
+        background-color: #ff5c00; 
     }
 }
 .mix__content{
     margin: 50px 8vw 0 8vw;
 }
 .demo__video{
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(0, 100px);
     height: 50vh;
     justify-self: center;
 }
 .demo__title{
+    opacity: 0;
+    transform: translate(0, 100px);
     margin-top: 50px;
 }
 @media(min-width : 768px){
     .section{
+        &--demo{
+            padding-bottom: 25px;
+            background-image: url(../images/demo_tab.png);
+            background-position-x: 191%;
+        }
         &--about{
             background-image: url(../images/about_tablet.png);
             background-size: cover;
@@ -86,7 +121,14 @@
     }
     .demo__video{
         height: 75vh;
-        justify-self: left;
+        justify-self: right;
+    }
+}
+@media(min-width : 1000px){
+    .section{
+        &--demo{
+            background-position-x: 100%;
+        }
     }
 }
 @media(min-width : 1200px){
@@ -94,6 +136,9 @@
         &--mix{
             flex-direction: row;
             align-items: flex-start;
+        }
+        &--about{
+            background-image: url(../images/about_desk.png);
         }
     }
     .mix__block{
@@ -111,5 +156,13 @@
     }
     .demo__title{
         max-width: 792px;
+    }
+}
+@media(min-width : 1440px) {
+    .section{
+        &--demo{
+            background-image: url(../images/demo_desk.png);
+            padding-bottom: 50px;
+        }
     }
 }

@@ -1,4 +1,5 @@
 .header{
+    overflow: hidden;
     height: 100vh;
     width: 100vw;
     &__title{
@@ -23,22 +24,39 @@
         margin: 0;
     }
 }
+.title__span{
+    display: flex;
+    align-items: flex-start;
+}
 .title__grid{
     max-width: 315px;
+    &--one{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
     &--two{
+        transform: translateX(100px);
+        opacity: 0;
         background-image: url(../images/kid_header.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: right;
     }
     &--three{
+        transform: translateX(100px);
+        opacity: 0;
         padding-right: 90px;
         background-image: url(../images/carre_vert.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: right;
     }
+    &--four{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
     &--five{
+        transform: translateX(100px);
         padding-left: 90px;
         background-image: url(../images/carre_orange.svg);
         background-repeat: no-repeat;
@@ -46,21 +64,13 @@
         background-position-x: left;
     }
     &--six{
+        transform: translateX(-100px);
+        opacity: 0;
         width: 80%;
         background-image: url(../images/carre_arc_cercle.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: right;
-    }
-    &--six::after{
-        content: '';
-        position: absolute;
-        background-color: #c327fa;
-        margin-top: 35px;
-        left: 6%;
-        height: 15px;
-        width: 185px;
-        z-index: -10;
     }
 }
 .footer{
@@ -118,6 +128,8 @@
             padding-left: 160px;
         }
         &--seven{
+            transform: translateX(100px);
+            opacity: 0;
             width: 90%;
             background-image: url(../images/carre_arc_cercle.svg);
             background-repeat: no-repeat;
@@ -197,6 +209,9 @@
             max-width: 1200px;
             bottom: -20%;
         }
+    }
+    .title__span{
+        padding-left: 14%;
     }
     .title__three--var{
         text-align: right;
