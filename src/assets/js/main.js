@@ -3,14 +3,6 @@
 // <!--------------- GSAP MA GUEULE !!! ---------------!>
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".title__grid--one", {x:0, opacity: 1, duration:1.5})
-gsap.to(".title__grid--two", {x:0, opacity: 1,  duration:1.5})
-gsap.to(".title__grid--three", {x:0, opacity: 1,  duration:1.5})
-gsap.to(".title__grid--four", {x:0, opacity: 1,  duration:1.5})
-gsap.to(".title__grid--five", {x:0, opacity: 1,  duration:1.5})
-gsap.to(".title__grid--six", {x:0, opacity: 1,  duration:1.5})
-gsap.to(".title__grid--seven", {x:0, opacity: 1,  duration:1.5})
-
 let mql = window.matchMedia('(max-width: 1200px)');
 let colors = ["#4d82f6", "#ff5c00", "#783be1", "#5319b6", "#ff303b"];
 let mixBlock = document.querySelector(".mix__block--one");
@@ -48,6 +40,14 @@ function TriggerDesk(e){
 
 TriggerDesk(mql);
 mql.addListener(TriggerDesk);
+
+gsap.to(".title__grid--one", {x:0, opacity: 1, duration:1.5})
+gsap.to(".title__grid--two", {x:0, opacity: 1,  duration:1.5})
+gsap.to(".title__grid--three", {x:0, opacity: 1,  duration:1.5})
+gsap.to(".title__grid--four", {x:0, opacity: 1,  duration:1.5})
+gsap.to(".title__grid--five", {x:0, opacity: 1,  duration:1.5})
+gsap.to(".title__grid--six", {x:0, opacity: 1,  duration:1.5})
+gsap.to(".title__grid--seven", {x:0, opacity: 1,  duration:1.5})
 
 gsap.to(".section--mix", {
     scrollTrigger: {
