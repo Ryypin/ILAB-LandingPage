@@ -15,12 +15,16 @@
         justify-content: space-between;
         width: 100%;
         height: auto;
+        position: absolute;
+        bottom: -35%;
+        max-width: 315px;
     }
     &__p{
         margin: 0;
     }
 }
 .title__grid{
+    max-width: 315px;
     &--two{
         background-image: url(../images/kid_header.png);
         background-repeat: no-repeat;
@@ -84,14 +88,17 @@
 @media(min-width : 767px){
     .header{
         &__disc{
-            margin-top: 25px;
+            width: 700px;
+            max-width: 700px;
+            bottom: -25%;
         }
         &__title{
             top: 13%;
         }
     }
     .title__grid{
-        max-width: 680px;
+        width: 700px;
+        max-width: 700px;
         &--one{
             background-image: url(../images/carre_orange.svg);
             background-repeat: no-repeat;
@@ -99,7 +106,7 @@
             padding-left: 18%;
         }
         &--two{
-            background-position-x: 160%;
+            background-position-x: 127%;
             text-align: center;
             margin: 0 2% 0 9%;
         }
@@ -132,31 +139,12 @@
 }
 @media(min-width : 1000px){
     .header{
-        padding-bottom: 20vh;
-    }
-    .title__grid{
-        &--one{
-            padding-left: 30%;
-            background-position-x: 22%;
-        }
-        &--two{
-            background-position-x: 60%;
-            margin-left: 15%;
-        }
-        &--three{
-            background-position-x: 75%;
-        }
-        &--seven{
-            text-align: center;
-            background-position-x: 85%;
-        }
-    }
-}
-@media(min-width : 1440px){
-    .header{
-        padding: 0;
         &__title{
-            top: 6%;
+            justify-items: center;
+        }
+        &__disc{
+            width: 907px;
+            max-width: 907px; 
         }
     }
     .title__three--var{
@@ -164,22 +152,24 @@
         margin-left: 34%;
     }
     .title__grid{
+        width: 907px;
+        max-width: 907px;
         &--one{
             padding: 0;
-            background-position-x: 89%;
+            background-position-x: 101%;
             padding-right: 11%;
             margin-right: 21%;
         }
         &--two{
             margin: 0;
             background: none;
-            margin-left: 46%;
+            margin-left: 60%;
         }
         &--three{
             width: 100%;
             background-image: url(../images/carre_vert.svg), url(../images/kid_header.png);
             background-position-x: 0%;
-            background-position: right, left;
+            background-position: right, -21%;
             padding: 0;
             text-align: center;
         }
@@ -187,19 +177,52 @@
             background-image: url(../images/carre_jaune.svg);
             background-repeat: no-repeat;
             background-size: contain;
+            background-position-x: -4%;
+            margin-left: 4%;
+        }
+        &--seven{
+            text-align: center;
+            padding: 0;
+            background-position-x: 101%;
+        }
+    }
+}
+@media(min-width : 1440px){
+    .header{
+        &__title{
+            top: 8%;
+        }
+        &__disc{
+            width: 1200px;
+            max-width: 1200px;
+            bottom: -20%;
+        }
+    }
+    .title__three--var{
+        text-align: right;
+        margin-left: 34%;
+    }
+    .title__grid{
+        min-width: 1200px;
+        max-width: 1200px;
+        &--one{
+            background-position-x: 89%;
+        }
+        &--two{
+            margin-left: 46%;
+        }
+        &--three{
+            background-position: 94%, 10%;
+        }
+        &--four{
             background-position-x: 7%;
         }
         &--seven{
-            background-position-x: 80%;
+            background-position-x: 89%;
         }
     }
     .list{
         margin: 200px 25px 0 25px;
         padding-bottom: 100px;
-    }
-}
-@media(min-width : 1600px){
-    .header{
-        padding-bottom: 20vh;
     }
 }
